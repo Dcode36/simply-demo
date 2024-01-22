@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #495057;
+}
+
+.tabs {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+    overflow: hidden;
+    width: 300px;
+    height: 100px;
+    background-color: #343a40;
+    color: rgba(255, 255, 255, 0.819);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.tab:hover {
+    background-color: #212529;
+    color: rgba(255, 255, 255, 0.819);
+}
+
+.chats {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.chat-area {
+    max-width: 62% !important;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.question {
+    flex: 1;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #6c757df7;
+    position: absolute;
+    right: 0;
+    max-width: 400px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.response {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    max-width: 500px;
+    top: 60px;
+    background-color: rgb(25, 134, 161);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.messagebox {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#inputMessage {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+}
+
+
+@media (max-width:768px) {
+
+    .chat-area {
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 20px;
+
+    }
+
+}
